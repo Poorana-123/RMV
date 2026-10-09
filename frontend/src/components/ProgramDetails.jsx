@@ -1,13 +1,13 @@
 import { useParams, Link } from "react-router-dom";
 import "../styles/ProgramDetails.css";
 
-
 const programs = [
   {
     id: 1,
     title: "Website Development",
     category: "Development",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
     level: "Beginner",
     duration: "3 Months",
     description:
@@ -37,7 +37,8 @@ const programs = [
     id: 2,
     title: "Web App Development",
     category: "Development",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     level: "Intermediate",
     duration: "4 Months",
     description:
@@ -67,7 +68,8 @@ const programs = [
     id: 3,
     title: "Mobile App Development",
     category: "Development",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
     level: "Intermediate",
     duration: "4 Months",
     description:
@@ -94,7 +96,8 @@ const programs = [
     id: 4,
     title: "Data Analyst",
     category: "Data & Analytics",
-    image:  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
     level: "Beginner",
     duration: "3 Months",
     description:
@@ -122,7 +125,8 @@ const programs = [
     id: 5,
     title: "Business Intelligence Analyst",
     category: "Data & Analytics",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
     level: "Intermediate",
     duration: "4 Months",
     description:
@@ -150,7 +154,8 @@ const programs = [
     id: 6,
     title: "Blockchain Developer (Solidity)",
     category: "Data & Blockchain",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
     level: "Advanced",
     duration: "4 Months",
     description:
@@ -178,7 +183,8 @@ const programs = [
     id: 7,
     title: "AI Agent Development",
     category: "Artificial Intelligence",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
     level: "Advanced",
     duration: "4 Months",
     description:
@@ -207,7 +213,8 @@ const programs = [
     id: 8,
     title: "AI Utilities & Automation",
     category: "Artificial Intelligence",
-    image: "https://images.unsplash.com/photo- generative-ai-image?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
     level: "Beginner",
     duration: "2 Months",
     description:
@@ -235,7 +242,8 @@ const programs = [
     id: 9,
     title: "Search & Growth Marketing",
     category: "Marketing & Business",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=800&q=80",
     level: "Beginner",
     duration: "3 Months",
     description:
@@ -263,7 +271,8 @@ const programs = [
     id: 10,
     title: "Sales & Marketing",
     category: "Marketing & Business",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80",
     level: "Beginner",
     duration: "3 Months",
     description:
@@ -292,7 +301,8 @@ const programs = [
     id: 11,
     title: "Game Design",
     category: "Creative",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
     level: "Intermediate",
     duration: "4 Months",
     description:
@@ -318,7 +328,8 @@ const programs = [
     id: 12,
     title: "Graphic & Creative Art Design",
     category: "Creative",
-    image:  "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80",
     level: "Beginner",
     duration: "3 Months",
     description:
@@ -344,9 +355,7 @@ const programs = [
 function ProgramDetails() {
   const { id } = useParams();
 
-  const program = programs.find(
-    (item) => item.id === Number(id)
-  );
+  const program = programs.find((item) => item.id === Number(id));
 
   if (!program) {
     return (
@@ -394,7 +403,13 @@ function ProgramDetails() {
         </div>
 
         <div className="program-details-image">
-          <img src={program.image} alt={program.title} />
+          <img
+            src={program.image}
+            alt={program.title}
+            onError={(event) => {
+              event.currentTarget.style.display = "none";
+            }}
+          />
           <span>RMV ACADEMY</span>
         </div>
       </section>
@@ -407,9 +422,7 @@ function ProgramDetails() {
           <div className="program-learning-list">
             {program.learn.map((item, index) => (
               <div className="program-learning-item" key={item}>
-                <span>
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
                 <p>{item}</p>
                 <b>↗</b>
               </div>
