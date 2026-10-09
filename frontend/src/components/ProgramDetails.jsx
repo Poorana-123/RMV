@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import "../styles/ProgramDetails.css";
-import Web from "../assets/Web_development.jpg";
+
 
 const programs = [
   {

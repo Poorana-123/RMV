@@ -53,7 +53,7 @@ function CareerAdvantages() {
         <p>
           At RMV Academy, learning continues beyond the classroom.
           Gain experience, support and opportunities that help
-          you move towards your career.
+          you move towards your career in Tech.
         </p>
 
       </div>
