@@ -1,0 +1,512 @@
+/* =========================================
+   RMV CTA SECTION
+========================================= */
+
+.rmv-cta-section {
+  width: 100%;
+  padding: 80px 5%;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CTA BANNER
+========================================= */
+
+.rmv-cta {
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+
+  min-height: 360px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  background: linear-gradient(
+    105deg,
+    #0866c6 0%,
+    #08a8df 100%
+  );
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.rmv-cta-content {
+  position: relative;
+  z-index: 2;
+
+  width: 55%;
+
+  padding: 55px 30px 55px 55px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+/* Small label */
+
+.rmv-cta-label {
+  margin-bottom: 16px;
+
+  color: #f5c400;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+
+/* Heading */
+
+.rmv-cta-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(34px, 4vw, 52px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+
+  font-weight: 700;
+}
+
+.rmv-cta-content h2 strong {
+  font-weight: 800;
+}
+
+
+/* Description */
+
+.rmv-cta-content p {
+  max-width: 500px;
+
+  margin: 20px 0 26px;
+
+  color: #e8f7ff;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.rmv-cta-button {
+  width: fit-content;
+
+  min-height: 48px;
+
+  padding: 0 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  background: #ffffff;
+
+  border-radius: 8px;
+
+  color: #0866c6;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.14);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.rmv-cta-button span {
+  font-size: 18px;
+
+  transition: transform 0.25s ease;
+}
+
+.rmv-cta-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.rmv-cta-button:hover span {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   RIGHT IMAGE AREA
+========================================= */
+
+.rmv-cta-image {
+  position: relative;
+
+  width: 45%;
+
+  min-width: 0;
+
+  min-height: 360px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CIRCLE BEHIND STUDENT
+========================================= */
+
+.rmv-cta-circle {
+  position: absolute;
+
+  width: 330px;
+  height: 330px;
+
+  right: 20px;
+  bottom: -150px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================
+   STUDENT IMAGE
+========================================= */
+
+.rmv-cta-image img {
+  position: absolute;
+
+  z-index: 2;
+
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  max-width: 430px;
+
+  height: 360px;
+
+  display: block;
+
+  object-fit: contain;
+  object-position: bottom center;
+
+  filter:
+    drop-shadow(
+      0 12px 12px rgba(0, 0, 0, 0.12)
+    );
+}
+
+
+/* =========================================
+   DECORATIVE BADGES
+========================================= */
+
+.rmv-tech-badge {
+  position: absolute;
+
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 900;
+
+  box-shadow:
+    0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* AI */
+
+.rmv-ai {
+  width: 48px;
+  height: 48px;
+
+  top: 65px;
+  left: 25px;
+
+  border-radius: 50%;
+
+  background: #12345b;
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  transform: rotate(-8deg);
+}
+
+
+/* JS */
+
+.rmv-js {
+  width: 58px;
+  height: 58px;
+
+  left: 35px;
+  bottom: 35px;
+
+  border-radius: 8px;
+
+  background: #f5c400;
+
+  color: #17202a;
+
+  font-size: 14px;
+
+  transform: rotate(-8deg);
+}
+
+
+/* Code */
+
+.rmv-code {
+  width: 52px;
+  height: 52px;
+
+  right: 12px;
+  bottom: 55px;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #0866c6;
+
+  font-size: 15px;
+
+  transform: rotate(8deg);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .rmv-cta-section {
+    padding: 65px 4%;
+  }
+
+  .rmv-cta-content {
+    width: 57%;
+
+    padding-left: 40px;
+  }
+
+  .rmv-cta-image {
+    width: 43%;
+  }
+
+  .rmv-cta-image img {
+    width: 115%;
+    max-width: none;
+
+    right: -30px;
+  }
+
+  .rmv-code {
+    right: 5px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .rmv-cta-section {
+    padding: 50px 18px;
+  }
+
+  .rmv-cta {
+    display: block;
+
+    min-height: 600px;
+
+    border-radius: 18px;
+  }
+
+
+  /* Content */
+
+  .rmv-cta-content {
+    width: 100%;
+
+    padding: 38px 25px 0;
+  }
+
+  .rmv-cta-content h2 {
+    font-size: 36px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .rmv-cta-content p {
+    font-size: 13px;
+  }
+
+
+  /* Image */
+
+  .rmv-cta-image {
+    width: 100%;
+
+    height: 280px;
+    min-height: 280px;
+
+    margin-top: 5px;
+  }
+
+  .rmv-cta-image img {
+    width: 320px;
+    max-width: 90%;
+
+    height: 285px;
+
+    left: 50%;
+    right: auto;
+
+    transform: translateX(-50%);
+  }
+
+
+  /* Circle */
+
+  .rmv-cta-circle {
+    width: 270px;
+    height: 270px;
+
+    left: 50%;
+    right: auto;
+
+    bottom: -150px;
+
+    transform: translateX(-50%);
+  }
+
+
+  /* Badges */
+
+  .rmv-ai {
+    left: 18px;
+    top: 35px;
+  }
+
+  .rmv-js {
+    left: 25px;
+    bottom: 25px;
+  }
+
+  .rmv-code {
+    right: 18px;
+    bottom: 30px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+  .rmv-cta-section {
+    padding: 45px 15px;
+  }
+
+  .rmv-cta {
+    min-height: 570px;
+  }
+
+  .rmv-cta-content {
+    padding: 32px 20px 0;
+  }
+
+  .rmv-cta-content h2 {
+    font-size: 31px;
+
+    letter-spacing: -1px;
+  }
+
+  .rmv-cta-content p {
+    font-size: 12px;
+
+    margin-top: 16px;
+  }
+
+  .rmv-cta-image {
+    height: 250px;
+    min-height: 250px;
+  }
+
+  .rmv-cta-image img {
+    width: 290px;
+
+    height: 260px;
+  }
+
+  .rmv-ai {
+    width: 40px;
+    height: 40px;
+
+    font-size: 9px;
+  }
+
+  .rmv-js {
+    width: 48px;
+    height: 48px;
+
+    font-size: 11px;
+  }
+
+  .rmv-code {
+    width: 44px;
+    height: 44px;
+
+    font-size: 12px;
+  }
+}

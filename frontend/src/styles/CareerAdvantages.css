@@ -1,0 +1,577 @@
+/* =====================================================
+   BUILD YOUR FUTURE
+===================================================== */
+
+.build-future {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 125px clamp(25px, 8vw, 120px) 90px;
+
+  background: #ffffff;
+
+  color: #12345b;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.build-header {
+  max-width: 1200px;
+
+  margin: 0 auto 100px;
+
+  position: relative;
+}
+
+
+/* eyebrow */
+
+.build-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 30px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+
+  color: #0866c6;
+}
+
+.build-eyebrow span {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d5e2ee;
+
+  border-radius: 50%;
+
+  font-size: 10px;
+
+  color: #12345b;
+}
+
+
+/* heading */
+
+.build-header h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(55px, 7vw, 92px);
+
+  line-height: 0.94;
+
+  font-weight: 500;
+
+  letter-spacing: -4px;
+
+  color: #12345b;
+}
+
+.build-header h2 em {
+  color: #0866c6;
+
+  font-style: italic;
+}
+
+
+/* description */
+
+.build-header p {
+  position: absolute;
+
+  right: 0;
+
+  bottom: 5px;
+
+  max-width: 400px;
+
+  margin: 0;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #687586;
+}
+
+
+/* =====================================================
+   JOURNEY
+===================================================== */
+
+.future-journey {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  position: relative;
+}
+
+
+/* connecting line */
+
+.journey-line {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  top: 8px;
+
+  height: 1px;
+
+  background: #d7e2ec;
+}
+
+.journey-line span {
+  display: block;
+
+  width: 0%;
+
+  height: 100%;
+
+  background: #0866c6;
+
+  transition: width 1.5s ease;
+}
+
+.future-journey:hover .journey-line span {
+  width: 100%;
+}
+
+
+/* =====================================================
+   ITEMS
+===================================================== */
+
+.future-items {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 0;
+}
+
+
+.future-item {
+  position: relative;
+
+  min-width: 0;
+
+  padding-right: 35px;
+
+  transition:
+    transform 0.45s ease;
+}
+
+
+/* every item except last */
+
+.future-item:not(:last-child) {
+  border-right: 1px solid #e4ebf2;
+
+  margin-right: 35px;
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.future-number {
+  position: relative;
+
+  z-index: 2;
+
+  width: fit-content;
+
+  padding-right: 18px;
+
+  background: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 18px;
+
+  color: #12345b;
+
+  transition:
+    color 0.3s ease,
+    transform 0.4s ease;
+}
+
+.future-item:hover .future-number {
+  color: #0866c6;
+
+  transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   NODE
+===================================================== */
+
+.future-node {
+  position: absolute;
+
+  top: 4px;
+
+  left: 0;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  border: 2px solid #0866c6;
+
+  transform: translateX(-1px);
+
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.future-item:hover .future-node {
+  background: #f5c400;
+
+  border-color: #f5c400;
+
+  transform: scale(1.5);
+
+  box-shadow:
+    0 0 0 7px rgba(245, 196, 0, 0.12);
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.future-content {
+  padding-top: 48px;
+
+  padding-left: 0;
+
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.future-item:hover .future-content {
+  transform: translateY(-8px);
+}
+
+
+/* label */
+
+.future-label {
+  display: block;
+
+  margin-bottom: 17px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+
+  color: #0866c6;
+}
+
+
+/* title */
+
+.future-content h3 {
+  max-width: 235px;
+
+  margin: 0 0 18px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 30px;
+
+  line-height: 1.05;
+
+  font-weight: 500;
+
+  letter-spacing: -1px;
+
+  color: #12345b;
+}
+
+
+/* description */
+
+.future-content p {
+  max-width: 240px;
+
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  color: #687586;
+}
+
+
+/* arrow */
+
+.future-arrow {
+  width: 40px;
+  height: 40px;
+
+  margin-top: 27px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d4e0eb;
+
+  border-radius: 50%;
+
+  color: #0866c6;
+
+  font-size: 18px;
+
+  opacity: 0.5;
+
+  transition:
+    opacity 0.3s ease,
+    background 0.35s ease,
+    color 0.35s ease,
+    transform 0.4s ease;
+}
+
+.future-item:hover .future-arrow {
+  opacity: 1;
+
+  background: #0866c6;
+
+  color: #ffffff;
+
+  transform: translate(4px, -4px);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.future-footer {
+  max-width: 1200px;
+
+  margin: 95px auto 0;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #dce5ed;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.future-footer > span {
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: #0866c6;
+}
+
+.future-footer-line {
+  flex: 1;
+
+  height: 1px;
+
+  background: #dce5ed;
+}
+
+.future-footer strong {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #12345b;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 950px) {
+
+  .build-future {
+    padding: 95px 35px 75px;
+  }
+
+  .build-header {
+    margin-bottom: 75px;
+  }
+
+  .build-header p {
+    position: static;
+
+    margin-top: 30px;
+
+    max-width: 550px;
+  }
+
+  .future-content h3 {
+    font-size: 25px;
+  }
+
+  .future-item {
+    padding-right: 20px;
+  }
+
+  .future-item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .build-future {
+    padding: 75px 25px 65px;
+  }
+
+  .build-header {
+    margin-bottom: 65px;
+  }
+
+  .build-header h2 {
+    font-size: 50px;
+
+    letter-spacing: -2.5px;
+  }
+
+  .build-header p {
+    font-size: 14px;
+  }
+
+
+  /* vertical journey */
+
+  .future-items {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+  }
+
+  .journey-line {
+    left: 4px;
+    right: auto;
+
+    top: 8px;
+    bottom: 20px;
+
+    width: 1px;
+    height: auto;
+  }
+
+  .journey-line span {
+    width: 100%;
+    height: 0%;
+  }
+
+  .future-journey:hover .journey-line span {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .future-item {
+    padding:
+
+      0 0 60px 42px;
+  }
+
+  .future-item:not(:last-child) {
+    border-right: none;
+
+    margin-right: 0;
+  }
+
+
+  .future-number {
+    display: none;
+  }
+
+
+  .future-node {
+    left: 0;
+
+    top: 4px;
+  }
+
+
+  .future-content {
+    padding-top: 0;
+  }
+
+  .future-content h3 {
+    max-width: 100%;
+
+    font-size: 30px;
+  }
+
+  .future-content p {
+    max-width: 100%;
+  }
+
+
+  .future-footer {
+    margin-top: 50px;
+
+    flex-wrap: wrap;
+  }
+
+  .future-footer-line {
+    display: none;
+  }
+
+  .future-footer strong {
+    width: 100%;
+
+    margin-top: 5px;
+  }
+}

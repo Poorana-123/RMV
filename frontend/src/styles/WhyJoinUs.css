@@ -1,0 +1,571 @@
+/* =========================================
+   WHY JOIN RMV
+========================================= */
+
+.why-section {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(50px, 7vw, 100px);
+
+  padding: 110px clamp(25px, 8vw, 120px);
+
+  background: #ffffff;
+
+  color: #12345b;
+}
+
+
+/* =========================================
+   LEFT VISUAL
+========================================= */
+
+.why-visual {
+  position: relative;
+
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Main image */
+
+.visual-main-card {
+  position: relative;
+
+  width: min(430px, 82%);
+
+  aspect-ratio: 0.82;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  background: #eef6ff;
+
+  box-shadow:
+    0 25px 60px rgba(18, 52, 91, 0.12);
+}
+
+.visual-main-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* Image overlay */
+
+.visual-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(18, 52, 91, 0.72),
+      rgba(18, 52, 91, 0) 45%
+    );
+}
+
+
+/* Caption */
+
+.visual-caption {
+  position: absolute;
+
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.visual-caption span {
+  color: #f5c400;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.visual-caption strong {
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   FLOATING PRACTICAL CARD
+========================================= */
+
+.experience-card {
+  position: absolute;
+
+  left: 0;
+  bottom: 100px;
+
+  min-width: 210px;
+
+  padding: 18px 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 15px 40px rgba(18, 52, 91, 0.15);
+
+  z-index: 1;
+}
+
+.experience-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f5c400;
+
+  color: #12345b;
+
+  font-size: 19px;
+}
+
+.experience-card div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.experience-card span {
+  color: #687586;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.experience-card strong {
+  color: #12345b;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   SKILLS CARD
+========================================= */
+
+.skills-card {
+  position: absolute;
+
+  right: 0;
+  top: 80px;
+
+  width: 165px;
+
+  padding: 18px;
+
+  background: #12345b;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 15px 40px rgba(18, 52, 91, 0.18);
+
+  z-index: 3;
+}
+
+.skills-card > span {
+  color: #f5c400;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  margin-top: 12px;
+}
+
+.skill-list b {
+  padding: 6px 8px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   GOLD DECORATION
+========================================= */
+
+.gold-circle {
+  position: absolute;
+
+  right: 5%;
+  bottom: 45px;
+
+  width: 75px;
+  height: 75px;
+
+  border-radius: 50%;
+
+  border: 12px solid #f5c400;
+
+  z-index: 1;
+}
+
+
+/* =========================================
+   RIGHT CONTENT
+========================================= */
+
+.why-content {
+  max-width: 650px;
+
+  padding-top: 15px;
+}
+
+
+/* Label */
+
+.why-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 22px;
+
+  color: #0866c6;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.why-label span {
+  width: 28px;
+  height: 3px;
+
+  background: #f5c400;
+}
+
+
+/* Heading */
+
+.why-content h2 {
+  margin: 0;
+
+  color: #12345b;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(45px, 5vw, 68px);
+
+  line-height: 0.98;
+
+  font-weight: 400;
+
+  letter-spacing: -3px;
+}
+
+.why-content h2 em {
+  color: #0866c6;
+
+  font-style: italic;
+}
+
+
+/* Intro */
+
+.why-intro {
+  max-width: 570px;
+
+  margin: 24px 0 35px;
+
+  color: #687586;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   FEATURE CARDS
+========================================= */
+
+.why-features {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+.why-feature {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr) 35px;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 20px;
+
+  background: #f8fbff;
+
+  border: 1px solid #e5edf6;
+
+  border-radius: 13px;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.why-feature:hover {
+  transform: translateX(5px);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 30px rgba(18, 52, 91, 0.09);
+}
+
+
+/* Feature icon */
+
+.feature-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef6ff;
+
+  color: #0866c6;
+
+  font-size: 18px;
+}
+
+
+/* Feature text */
+
+.feature-text {
+  min-width: 0;
+}
+
+.feature-text h3 {
+  margin: 0;
+
+  color: #12345b;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.feature-text p {
+  margin: 6px 0 0;
+
+  color: #687586;
+
+  font-size: 12.5px;
+
+  line-height: 1.6;
+}
+
+
+/* Arrow */
+
+.feature-arrow {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d8e4f0;
+
+  color: #0866c6;
+
+  font-size: 15px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.why-feature:hover .feature-arrow {
+  background: #0866c6;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .why-section {
+    grid-template-columns: 1fr;
+
+    gap: 65px;
+
+    padding: 90px 45px;
+  }
+
+  .why-visual {
+    min-height: 560px;
+  }
+
+  .why-content {
+    max-width: 750px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .why-section {
+    padding: 70px 20px;
+
+    gap: 50px;
+  }
+
+  .why-visual {
+    min-height: 470px;
+  }
+
+  .visual-main-card {
+    width: 75%;
+
+    border-radius: 20px;
+  }
+
+  .experience-card {
+    left: 0;
+    bottom: 60px;
+
+    min-width: auto;
+
+    padding: 13px 15px;
+  }
+
+  .experience-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .experience-card strong {
+    font-size: 12px;
+  }
+
+  .skills-card {
+    right: 0;
+    top: 35px;
+
+    width: 125px;
+
+    padding: 14px;
+  }
+
+  .gold-circle {
+    width: 45px;
+    height: 45px;
+
+    border-width: 8px;
+
+    right: 3%;
+    bottom: 30px;
+  }
+
+  .why-content h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .why-intro {
+    font-size: 14px;
+  }
+
+  .why-feature {
+    grid-template-columns: 40px minmax(0, 1fr) 30px;
+
+    gap: 12px;
+
+    padding: 15px;
+  }
+
+  .feature-icon {
+    width: 38px;
+    height: 38px;
+
+    font-size: 15px;
+  }
+
+  .feature-text h3 {
+    font-size: 15px;
+  }
+
+  .feature-text p {
+    font-size: 11.5px;
+  }
+
+  .feature-arrow {
+    width: 28px;
+    height: 28px;
+  }
+}

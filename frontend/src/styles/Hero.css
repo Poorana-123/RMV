@@ -1,0 +1,889 @@
+/* =========================================================
+   RMV ACADEMY — HERO SECTION
+   Bright • Premium • Modern
+========================================================= */
+
+
+/* =========================================================
+   MAIN HERO
+========================================================= */
+
+.rmv-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: calc(100vh - 84px);
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr auto;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #ffffff 55%,
+      #f4f9ff 100%
+    );
+
+  color: #17202a;
+}
+
+
+/* =========================================================
+   VERY LIGHT BRAND GLOW
+========================================================= */
+
+.rmv-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  right: -280px;
+  top: -300px;
+
+  border-radius: 50%;
+
+  background: rgba(8, 102, 198, 0.045);
+
+  pointer-events: none;
+}
+
+.rmv-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  left: -250px;
+  bottom: -280px;
+
+  border-radius: 50%;
+
+  background: rgba(245, 196, 0, 0.045);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.rmv-hero-content {
+  position: relative;
+
+  z-index: 5;
+  
+  padding:
+    30px
+    40px
+    60px
+    clamp(45px, 8vw, 120px);
+
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+
+/* =========================================================
+   TOP BADGE
+========================================================= */
+
+.rmv-hero-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 9px 15px;
+
+  border: 1px solid #d7e5f5;
+
+  border-radius: 30px;
+
+  background: #ffffff;
+
+  color: #0866c6;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+  box-shadow:
+    0 5px 18px rgba(18, 52, 91, 0.05);
+}
+
+.rmv-hero-badge span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #f5c400;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.rmv-hero-title {
+  margin: 27px 0 0;
+
+  color: #14243a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(52px, 5.4vw, 82px);
+
+  line-height: 0.98;
+
+  font-weight: 500;
+
+  letter-spacing: -4px;
+}
+
+.rmv-hero-title strong {
+  color: #0866c6;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   LEARNER AREA
+========================================================= */
+
+.rmv-learners {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-top: 28px;
+}
+
+
+/* Avatar group */
+
+.learner-avatars {
+  display: flex;
+
+  align-items: center;
+
+  padding-left: 4px;
+}
+
+
+/* Individual avatar */
+
+.avatar {
+  width: 31px;
+  height: 31px;
+
+  margin-left: -6px;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 50%;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+
+/* RMV colors */
+
+.avatar:nth-child(1) {
+  background: #0866c6;
+}
+
+.avatar:nth-child(2) {
+  background: #12345b;
+}
+
+.avatar:nth-child(3) {
+  background: #f0b900;
+}
+
+
+/* Plus */
+
+.avatar-plus {
+  width: 31px;
+  height: 31px;
+
+  margin-left: -6px;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 50%;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #0866c6;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* Learner text */
+
+.rmv-learners p {
+  margin: 0;
+
+  color: #707b89;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.rmv-divider {
+  width: 78%;
+
+  height: 1px;
+
+  margin-top: 25px;
+
+  background: #e3e9ef;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.rmv-hero-description {
+  max-width: 470px;
+
+  margin: 21px 0 0;
+
+  color: #697789;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   BUTTON AREA
+========================================================= */
+
+.rmv-hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 29px;
+}
+
+
+/* Primary button */
+
+.rmv-primary-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  padding: 14px 20px;
+
+  background: #12345b;
+
+  color: #ffffff;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 22px rgba(18, 52, 91, 0.16);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.rmv-primary-btn span {
+  color: #f5c400;
+
+  font-size: 17px;
+}
+
+.rmv-primary-btn:hover {
+  background: #0866c6;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 28px rgba(8, 102, 198, 0.2);
+}
+
+
+/* Secondary */
+
+.rmv-secondary-btn {
+  color: #193654;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  border-bottom: 1px solid #b7c2ce;
+
+  padding-bottom: 5px;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.rmv-secondary-btn:hover {
+  color: #0866c6;
+
+  border-color: #0866c6;
+}
+
+
+/* =========================================================
+   RIGHT HERO VISUAL
+========================================================= */
+
+.rmv-hero-visual {
+  position: relative;
+
+  min-height: 600px;
+
+  overflow: visible;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================================
+   LIGHT BLUE IMAGE PANEL
+========================================================= */
+
+.visual-panel {
+  position: absolute;
+
+  width: 70%;
+  height: 67%;
+
+  right: 9%;
+  top: 15%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #edf6ff,
+      #e4f0fc
+    );
+
+  border-radius: 24px;
+
+  border: 1px solid #dceaf8;
+}
+
+
+/* =========================================================
+   STUDENT IMAGE
+========================================================= */
+
+.student-image-wrapper {
+  position: absolute;
+
+  z-index: 3;
+
+  width: 70%;
+  height: 82%;
+
+  right: 10%;
+  bottom: 0;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+}
+
+
+.student-image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center top;
+
+  border-radius: 18px;
+}
+
+
+/* =========================================================
+   FLOATING RMV CARD
+========================================================= */
+
+.floating-learning-card {
+  position: absolute;
+
+  z-index: 7;
+
+  left: 8%;
+  top: 43%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 11px 17px 11px 11px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  border: 1px solid #e3e9ef;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 15px 35px rgba(18, 52, 91, 0.12);
+}
+
+
+/* Icon */
+
+.learning-icon {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 9px;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #f5c400;
+
+  color: #12345b;
+
+  font-size: 17px;
+
+  font-weight: 800;
+}
+
+
+/* Text */
+
+.floating-learning-card div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.floating-learning-card span {
+  color: #0866c6;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.floating-learning-card strong {
+  color: #172b43;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   IMAGE NUMBER
+========================================================= */
+
+.visual-number {
+  position: absolute;
+
+  z-index: 8;
+
+  top: 19%;
+  left: 6%;
+
+  color: #0866c6;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.scroll-indicator {
+  position: absolute;
+
+  z-index: 8;
+
+  right: 4%;
+  top: 27%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #617287;
+}
+
+.scroll-indicator span {
+  writing-mode: vertical-rl;
+
+  transform: rotate(180deg);
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+
+  font-weight: 700;
+}
+
+.scroll-indicator div {
+  width: 1px;
+
+  height: 55px;
+
+  background: #aebdcb;
+}
+
+.scroll-indicator b {
+  color: #0866c6;
+
+  font-size: 14px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   BOTTOM RMV APPROACH
+========================================================= */
+
+.rmv-trust-section {
+  grid-column: 1 / -1;
+
+  min-height: 105px;
+
+  padding:
+    20px
+    clamp(40px, 7vw, 120px);
+
+  border-top: 1px solid #e8edf2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background: #ffffff;
+}
+
+
+/* Label */
+
+.trust-label {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.trust-label span {
+  color: #12345b;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+}
+
+.trust-label small {
+  color: #929ca8;
+
+  font-size: 9px;
+}
+
+
+/* Items */
+
+.trust-items {
+  display: flex;
+
+  align-items: center;
+
+  gap: clamp(28px, 5vw, 70px);
+}
+
+.trust-items span {
+  color: #a1aab5;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  transition: color 0.2s ease;
+}
+
+.trust-items span:hover {
+  color: #0866c6;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .rmv-hero-content {
+    padding-left: 55px;
+  }
+
+  .rmv-hero-title {
+    font-size: 55px;
+
+    letter-spacing: -2.5px;
+  }
+
+  .rmv-hero-visual {
+    min-height: 560px;
+  }
+
+  .trust-items {
+    gap: 25px;
+  }
+
+  .trust-items span {
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .rmv-hero {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: auto;
+  }
+
+
+  .rmv-hero-content {
+    padding:
+      55px
+      25px
+      25px;
+  }
+
+
+  .rmv-hero-title {
+    font-size: 47px;
+
+    letter-spacing: -2.5px;
+  }
+
+
+  .rmv-hero-description {
+    font-size: 13px;
+  }
+
+
+  .rmv-hero-visual {
+    min-height: 500px;
+  }
+
+
+  .visual-panel {
+    width: 76%;
+
+    height: 70%;
+
+    top: 10%;
+
+    right: 12%;
+  }
+
+
+  .student-image-wrapper {
+    width: 75%;
+
+    height: 85%;
+
+    right: 12%;
+  }
+
+
+  .floating-learning-card {
+    left: 4%;
+
+    top: 42%;
+  }
+
+
+  .rmv-trust-section {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 25px;
+  }
+
+
+  .trust-items {
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    gap: 15px 25px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .rmv-hero-content {
+    padding:
+      45px
+      20px
+      20px;
+  }
+
+
+  .rmv-hero-title {
+    font-size: 39px;
+
+    line-height: 1.05;
+  }
+
+
+  .rmv-hero-actions {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .rmv-primary-btn {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+
+  .rmv-hero-visual {
+    min-height: 420px;
+  }
+
+
+  .student-image-wrapper {
+    width: 78%;
+
+    right: 10%;
+  }
+}
